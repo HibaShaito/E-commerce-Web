@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce By H</title>
+    <!--Link to fontawesome cdn website to get some icons-->
+    <script
+      src="https://kit.fontawesome.com/89c74d5bb8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Link to style sheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Link to javascript-->
+    <script src="script.js" defer></script>
+    <!--defer keyword is used to specify that a script should be executed-->
+    <!--after the page has loaded-->
+  </head>
+  <body>
+    <!--Header Section Contain Logo And Navigation Bar-->
+    <!--logo part-->
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
+      <!--search bar-->
+      <div class="form1">
+        <input type="text" id="search-input" placeholder="Search..." />
+        <button class="normal">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <!--Creating Nav Bar-->
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!--Using fontawesome icons to put BAG or CART icon-->
+          <li id="lg-bag">
+            <a href="cart.html"
+              ><i class="fa-solid fa-bag-shopping" style="color: #b197fc"></i
+            ></a>
+          </li>
+          <!--adding close will be only visible in medium side devices navbar-->
+          <a href="#" id="close"
+            ><i class="fa-solid fa-xmark" style="color: #ff0000"></i
+          ></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"
+          ><i class="fa-solid fa-bag-shopping" style="color: #b197fc"></i
+        ></a>
+        <i id="bar" class="fa-solid fa-outdent" style="color: #b197fc"></i>
+      </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+      <h2>#KnowUs</h2>
+      <p>We are the fAsHiOn!</p>
+    </section>
+
+    <section id="about-head" class="section-p1">
+      <img src="img/about/a6.jpg" alt="" />
+      <div>
+        <h2>Who Are WE?</h2>
+        <p>
+          Hello Shopping is more than just a clothing shop; we are a destination
+          where style meets convenience. With a passion for fashion and a
+          commitment to quality, we curate a diverse collection of clothing and
+          accessories to cater to every taste and occasion. Our mission is to
+          provide our customers with an unparalleled shopping experience,
+          offering not only the latest trends but also timeless classics that
+          effortlessly elevate any wardrobe. Whether you're seeking everyday
+          essentials or statement pieces, Hello Shopping is your go-to
+          destination for all things fashion. We pride ourselves on our
+          personalized service, attention to detail, and dedication to customer
+          satisfaction, ensuring that every visit leaves you feeling inspired
+          and excited about your style journey. Welcome to Hello Shopping, where
+          fashion is not just a choice but a lifestyle.
+        </p>
+        <abbr title=""
+          >At Hello Shopping, we pride ourselves on offering an exquisite
+          selection of stunning designs that cater to every taste and style.
+          With our user-friendly platform and seamless shopping experience,
+          finding your perfect outfit has never been easier.</abbr
+        >
+        <br /><br />
+        <!--Add sliding text-->
+        <!--Scrollamount change the speed it movs at-->
+        <!-- setting the "loop" attribute to "-1" ensures that the scrolling animation will repeat indefinitely without stopping.-->
+        <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%"
+          >At Hello Shopping, we pride ourselves on offering an exquisite
+          selection of stunning designs that cater to every taste and style.
+          With our user-friendly platform and seamless shopping experience,
+          finding your perfect outfit has never been easier.</marquee
+        >
+      </div>
+    </section>
+
+    <section id="about-app" class="section-p1">
+      <h1>Download the <a href="">App</a> to Get the Trendiest Cloth</h1>
+      <div class="video">
+        <video autoplay muted loop controls src="img/about/1.mp4"></video>
+      </div>
+    </section>
+
+    <section id="feature" class="section-p1">
+      <!--section p1 adds some padding around our feature section-->
+      <div class="fe-box">
+        <!--Feature box-->
+        <img src="img/features/f1.png" alt="" />
+        <h6>Free Shipping</h6>
+      </div>
+      <div class="fe-box">
+        <!--Feature box-->
+        <img src="img/features/f2.png" alt="" />
+        <h6>Online Order</h6>
+      </div>
+      <div class="fe-box">
+        <!--Feature box-->
+        <img src="img/features/f3.png" alt="" />
+        <h6>Save Money</h6>
+      </div>
+      <div class="fe-box">
+        <!--Feature box-->
+        <img src="img/features/f4.png" alt="" />
+        <h6>Promotions</h6>
+      </div>
+      <div class="fe-box">
+        <!--Feature box-->
+        <img src="img/features/f5.png" alt="" />
+        <h6>Happy Sell</h6>
+      </div>
+      <div class="fe-box">
+        <!--Feature box-->
+        <img src="img/features/f6.png" alt="" />
+        <h6>F24/7 Support</h6>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>
+          Get E-mail Updates About Our Latest Shop And
+          <span>Special Offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="normal"><a href="Signin_out.html">Sign Up</a></button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" alt="" />
+        <h4>Contact</h4>
+        <p>
+          <strong> Address:</strong> 4294 Michel Abi Chahla, Moussaitbeh, Beirut
+        </p>
+        <p><strong> Phone:</strong> +961 1 706 881</p>
+        <p><strong> Hours:</strong>10:00 -18:00 Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=61559123456245"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/hellow_shoppin/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+      <br />
+      <div class="copyright">
+        <p>&copy H page by Hiba for Hellow Shopping 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
